@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>flatpickr quick start</title>
+  <script src="./flatpicker/flatpicker.min.js"></script>
+  <link rel="stylesheet" href="./flatpicker/flatpicker.min.css">
+  <link rel="stylesheet" href="./flatpicker/themes/material_blue.css">
 
-  <link rel="stylesheet" href="dist/flatpickr.css">
-  <link rel="stylesheet" href="dist/ie.css">
-  <link rel="stylesheet" href="dist/plugins/confirmDate/confirmDate.css">
-  <link rel="stylesheet" href="dist/plugins/monthSelect/style.css">
 
   <style type="text/css">
     body {
@@ -40,18 +39,10 @@
   </div>
 
   <!-- classList polyfill for IE9 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.2.20171210/classList.min.js"></script>
-  <script src="./src/flatpickr.js"></script>
-  <script src="./src/plugins/rangePlugin.js"></script>
-  <script src="./src/plugins/confirmDate/confirmDate.js"></script>
-  <script src="./src/plugins/minMaxTimePlugin.js"></script>
-  <script src="./src/plugins/monthSelect/index.js"></script>
-  <script src="./src/plugins/scrollPlugin.js"></script>
-  <script src="./src/plugins/weekSelect/weekSelect.js"></script>
-
   <script>
     var fp = flatpickr(".date", {
-
+      enableTime: true,
+      dateFormat: "Y/m/d H:i",
     })
   </script>
 </body>
